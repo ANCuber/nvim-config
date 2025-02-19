@@ -10,10 +10,13 @@ function CompileRunCode()
 	-- Check the file type and run appropriate commands
 	local filetype = vim.bo.filetype
 	if filetype == "cpp" then
-    -- Compile and Run .cpp file
+        -- Compile and Run .cpp file
 		vim.cmd("belowright split term://g++ -Wall -Wextra -Wshadow %:r.cpp -o %:r && echo ----Compiled---- && ./%:r")
+    elseif filetype == "c" then
+        -- Compile and Run .c file
+        vim.cmd("belowright split term://gcc -Wall -Wextra -Wshadow %:r.c -o %:r && echo ----Compiled---- && ./%:r")
 	elseif filetype == "python" then
-    -- Run .py file
+        -- Run .py file
 	    vim.cmd("belowright split term://echo ----Running---- && python3 %")
 	elseif filetype == "tex" then
 		-- Compile .tex file
