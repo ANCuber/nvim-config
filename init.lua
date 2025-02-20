@@ -24,3 +24,6 @@ require("config.options")
 require("config.compile-and-run")
 
 require("lazy").setup("plugins")
+
+-- others
+-- fugitive
