@@ -19,5 +19,9 @@ vim.cmd("set smartcase")
 vim.cmd("set showcmd")
 vim.cmd("set cursorline")
 
+-- Wraping
+vim.cmd("set wrap")
+vim.cmd("set linebreak")
+
 -- For gitsigns
 vim.cmd("set signcolumn=yes")
