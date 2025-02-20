@@ -1,6 +1,6 @@
 -- vim options
 
-
+-- Basics
 vim.cmd("syn on")
 vim.cmd("syn enable")
 
@@ -18,3 +18,6 @@ vim.cmd("set smartcase")
 
 vim.cmd("set showcmd")
 vim.cmd("set cursorline")
+
+-- For gitsigns
+vim.cmd("set signcolumn=yes")
