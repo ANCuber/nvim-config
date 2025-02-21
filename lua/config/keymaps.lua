@@ -20,7 +20,7 @@ vim.keymap.set("n", "<leader>us", ":noh<CR>")
 -- :e!
 vim.keymap.set("n", "<leader>dr", ":e!<CR>")
 
--- Close files
+-- Save and close files
 vim.keymap.set("n", "<leader>wq", function()
     vim.cmd("w")
     
@@ -32,6 +32,7 @@ vim.keymap.set("n", "<leader>wq", function()
         vim.cmd("Neotree")
         vim.cmd("wincmd w")
         vim.cmd("q")
+        vim.cmd("bd #")
     else 
         vim.cmd("bprevious")
         vim.cmd("bd #")
@@ -50,24 +51,24 @@ vim.keymap.set("n", "<leader>dq", function()
         vim.cmd("Neotree")
         vim.cmd("wincmd w")
         vim.cmd("q")
+        vim.cmd("bd #")
     else 
         vim.cmd("bprevious")
         vim.cmd("bd #")
     end
 end, { noremap = true, silent = true })        
 
-
 -- Switch to left or right
-vim.keymap.set("n", "<leader>mm", ":bnext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>nn", ":bprevious<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>m", ":bnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>n", ":bprevious<CR>", { noremap = true, silent = true })
 
 -- Neotree tab control
-vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true, silent = true })
 -- Switch between Neotree and opened files
-vim.keymap.set("n", "<leader>er", "<C-w>w", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>r", "<C-w>w", { noremap = true, silent = true })
 
--- Exit
-vim.keymap.set("n", "<leader>exit", function()
+-- Quit
+vim.keymap.set("n", "<leader>quit", function()
     vim.cmd("Neotree close")
     vim.cmd("q")
 end, { noremap = true, silent = true})
