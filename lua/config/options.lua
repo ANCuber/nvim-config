@@ -24,4 +24,4 @@ vim.cmd("set wrap")
 vim.cmd("set linebreak")
 
 -- For gitsigns
-vim.cmd("set signcolumn=yes")
+-- vim.cmd("set signcolumn=yes")

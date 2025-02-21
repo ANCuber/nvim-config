@@ -22,6 +22,8 @@ vim.keymap.set("n", "<leader>dr", ":e!<CR>")
 
 -- Save and close files
 vim.keymap.set("n", "<leader>wq", function()
+    vim.cmd("Neotree")
+    vim.cmd("wincmd w")
     vim.cmd("w")
     
     local buffer_count = #vim.tbl_filter(function(buf)
@@ -29,8 +31,6 @@ vim.keymap.set("n", "<leader>wq", function()
     end, vim.api.nvim_list_bufs())
         
     if buffer_count == 1 then
-        vim.cmd("Neotree")
-        vim.cmd("wincmd w")
         vim.cmd("q")
         vim.cmd("bd #")
     else 
@@ -41,6 +41,8 @@ end, { noremap = true, silent = true })
 
 -- Discard changes and close files
 vim.keymap.set("n", "<leader>dq", function()
+    vim.cmd("Neotree")
+    vim.cmd("wincmd w")
     vim.cmd("e!")
     
     local buffer_count = #vim.tbl_filter(function(buf)
@@ -48,8 +50,6 @@ vim.keymap.set("n", "<leader>dq", function()
     end, vim.api.nvim_list_bufs())
         
     if buffer_count == 1 then
-        vim.cmd("Neotree")
-        vim.cmd("wincmd w")
         vim.cmd("q")
         vim.cmd("bd #")
     else 
