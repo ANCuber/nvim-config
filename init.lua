@@ -22,6 +22,7 @@ vim.g.mapleader = " "
 require("config.keymaps")
 require("config.options")
 require("config.compile-and-run")
+require("config.buffer-control")
 
 require("lazy").setup("plugins")
 
