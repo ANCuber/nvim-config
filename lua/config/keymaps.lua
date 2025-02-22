@@ -30,7 +30,7 @@ vim.keymap.set("n", "<leader>e", ":Neotree reveal toggle<CR>", { noremap = true,
 vim.keymap.set("n", "<leader>r", "<C-w>w", { noremap = true, silent = true })
 
 -- Quit
-vim.keymap.set("n", "<leader>quit", function()
+vim.keymap.set("n", "<leader>qt", function()
     vim.cmd("Neotree close")
     vim.cmd("q")
 end, { noremap = true, silent = true})

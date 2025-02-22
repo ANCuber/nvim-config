@@ -25,6 +25,3 @@ require("config.compile-and-run")
 require("config.buffer-control")
 
 require("lazy").setup("plugins")
-
--- others
--- fugitive
