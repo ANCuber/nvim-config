@@ -13,13 +13,13 @@ vim.keymap.set("n", "<leader>t", ":belowright 10split | terminal<CR>i", { norema
 -- Move by visual lines instead of actual lines
 vim.keymap.set("n", "j", "gj", { noremap = true, silent = true })
 vim.keymap.set("n", "k", "gk", { noremap = true, silent = true })
-vim.keymap.set("n", "gj", "j", { noremap = true, silent = true })
-vim.keymap.set("n", "gk", "k", { noremap = true, silent = true })
+vim.keymap.set("n", "J", "j", { noremap = true, silent = true })
+vim.keymap.set("n", "K", "k", { noremap = true, silent = true })
 
 vim.keymap.set("v", "j", "gj", { noremap = true, silent = true })
 vim.keymap.set("v", "k", "gk", { noremap = true, silent = true })
-vim.keymap.set("v", "gj", "j", { noremap = true, silent = true })
-vim.keymap.set("v", "gk", "k", { noremap = true, silent = true })
+vim.keymap.set("v", "J", "j", { noremap = true, silent = true })
+vim.keymap.set("v", "K", "k", { noremap = true, silent = true })
 
 -- :noh unhighlight searched word
 vim.keymap.set("n", "<leader>us", ":noh<CR>")
