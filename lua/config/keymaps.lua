@@ -24,9 +24,6 @@ vim.keymap.set("v", "K", "k", { noremap = true, silent = true })
 -- :noh unhighlight searched word
 vim.keymap.set("n", "<leader>us", ":noh<CR>")
 
--- :e!
-vim.keymap.set("n", "<leader>dr", ":e!<CR>")
-
 -- Switch to left or right
 vim.keymap.set("n", "<leader>m", ":bnext<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>n", ":bprevious<CR>", { noremap = true, silent = true })
