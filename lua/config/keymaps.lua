@@ -25,12 +25,14 @@ vim.keymap.set("v", "K", "k", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>us", ":noh<CR>")
 
 -- Switch to left or right
-vim.keymap.set("n", "<leader>m", ":bnext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>n", ":bprevious<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>l", ":bnext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>h", ":bprevious<CR>", { noremap = true, silent = true })
 
 -- Neotree tab control
 vim.keymap.set("n", "<leader>e", ":Neotree reveal toggle<CR>", { noremap = true, silent = true })
--- Switch between Neotree and opened files
+
+-- Switch windows
+vim.keymap.set("n", "<leader>p", "<C-w>W", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>r", "<C-w>w", { noremap = true, silent = true })
 
 -- Quit
