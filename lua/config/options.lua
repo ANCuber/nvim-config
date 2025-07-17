@@ -25,7 +25,7 @@ vim.cmd("set linebreak")
 vim.cmd("set wrapscan")
 
 -- Scrolling
--- vim.cmd("set scrolloff=3")
+vim.cmd("set scrolloff=5")
 
 -- For gitsigns
 -- vim.cmd("set signcolumn=yes")
