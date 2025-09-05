@@ -20,5 +20,21 @@ return {
                 }
             })
         end
-    }
+
+    },
+
+    {
+        'kaarmu/typst.vim',
+        ft = 'typst',
+        lazy=false,
+    },
+    
+    -- {
+    --     "williamboman/mason.nvim",
+    --     opts = {
+    --         ensure_installed = {
+    --             "tinymist",
+    --         },
+    --     },
+    -- },
 }
