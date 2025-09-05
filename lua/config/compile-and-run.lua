@@ -21,7 +21,7 @@ function CompileRunCode()
 	elseif filetype == "tex" then
 		-- Compile .tex file
 		vim.cmd("belowright split term://xelatex %")
-    elseif filetype == "typ" then
+    elseif filetype == "typst" then
         -- Compile .typ file
         vim.cmd("belowright split term://typst compile %")
 	end
