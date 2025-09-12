@@ -23,5 +23,6 @@ require("config.keymaps")
 require("config.options")
 require("config.compile-and-run")
 require("config.buffer-control")
+require("config.load-template")
 
 require("lazy").setup("plugins")

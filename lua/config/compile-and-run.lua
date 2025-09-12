@@ -1,6 +1,5 @@
--- Compile and Run Codes
+-- Compile and Run Codes <F5>
 
--- Key mapping for <F5> to Compile and Run the code
 vim.api.nvim_set_keymap("n", "<F5>", ":lua CompileRunCode()<CR>", { noremap = true, silent = true })
 
 function CompileRunCode()
@@ -18,7 +17,7 @@ function CompileRunCode()
 	elseif filetype == "python" then
         -- Run .py file
 	    vim.cmd("belowright split term://echo ----Running---- && python3 %")
-	elseif filetype == "tex" then
+	elseif filetype == "plaintex" or filetype == "tex" then
 		-- Compile .tex file
 		vim.cmd("belowright split term://xelatex %")
     elseif filetype == "typst" then
