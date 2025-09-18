@@ -11,10 +11,10 @@ return {
         },
         config = function()
             -- Mason setup
-            require("mason").setup()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "pyright", "clangd", "ts_ls" , "tinymist" },
-            })
+            -- require("mason").setup()
+            -- require("mason-lspconfig").setup({
+            --     ensure_installed = { "pyright", "clangd", "ts_ls" , "tinymist" },
+            -- })
 
             -- nvim-cmp setup
             local cmp = require("cmp")
